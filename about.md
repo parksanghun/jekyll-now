@@ -12,5 +12,5 @@ permalink: /about/
 ### Contact me
 
 [sanghun1984@gmail.com](mailto:sanghun1984@gmail.com)
-</br>
+<br />
 [https://github.com/parksanghun](https://github.com/parksanghun)
