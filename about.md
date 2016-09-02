@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm a web programmer.
+너 자신을 알라!!!
 
 <!--### More Information-->
 
@@ -12,3 +12,4 @@ I'm a web programmer.
 ### Contact me
 
 [sanghun1984@gmail.com](mailto:sanghun1984@gmail.com)
+[https://github.com/parksanghun](https://github.com/parksanghun)
