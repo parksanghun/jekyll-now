@@ -3,7 +3,9 @@ layout: post
 title: Markdown Example
 ---
 # 큰 제목
+
 ## 중간 제목
+
 ### 작은 제목
 
 큰 제목
