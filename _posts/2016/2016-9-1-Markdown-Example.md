@@ -14,12 +14,17 @@ title: Markdown Example
 중간 제목
 ---------------------
 
-*이탤릭체*, _이탤릭체_
-**볼드체**, __볼드체__
+*이탤릭체*
+_이탤릭체_
+
+**볼드체**
+__볼드체__
 
 - 하나
 - 둘
 - 셋
+    
+
 
 >문단.
 
@@ -34,6 +39,10 @@ write down java code
 ```json
 write down json code
 ```
+```xml
+wirte down xml code
+```
+
 
 [링크명](http://www.example.com), [링크명](http://www.example.com "사이트 제목")
 ![이미지](/images/404.jpg)
