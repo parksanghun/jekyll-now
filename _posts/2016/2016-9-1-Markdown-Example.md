@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Markdown Example
+categories: [markdown]
+tags: [markdown, cheatsheet]
+published: true
 ---
 
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

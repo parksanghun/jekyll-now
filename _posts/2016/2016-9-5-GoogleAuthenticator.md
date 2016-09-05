@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Google Authenticator
+categories: [google]
+tags: [google authenticator, totp, hotp, sha-1, sha]
+published: true
 ---
 
 ## [Google_Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator)
