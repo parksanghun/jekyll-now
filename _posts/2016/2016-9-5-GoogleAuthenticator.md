@@ -2,8 +2,6 @@
 layout: post
 title: Google Authenticator
 ---
-# Google Authenticator
-
 ## [Google_Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator)
 Google Authenticator is an application that implements two-step verification services using the Time-based One-time Password Algorithm (TOTP) and HMAC-based One-time Password Algorithm (HOTP), for authenticating users of mobile applications by Google. The service implements algorithms specified in RFC 6238 and RFC 4226
 
