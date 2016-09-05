@@ -2,6 +2,7 @@
 layout: post
 title: Google Authenticator
 ---
+
 ## [Google_Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator)
 Google Authenticator is an application that implements two-step verification services using the Time-based One-time Password Algorithm (TOTP) and HMAC-based One-time Password Algorithm (HOTP), for authenticating users of mobile applications by Google. The service implements algorithms specified in RFC 6238 and RFC 4226
 
@@ -39,7 +40,8 @@ SHA-1은 SHA 함수들 중 가장 많이 쓰이며, TLS, SSL, PGP, SSH, IPSec �
 SHA-0과 SHA-1에 대한 공격은 이미 발견되었다. SHA-2에 대한 공격은 아직 발견되지 않았으나, 전문가들은 SHA-2 함수들이 SHA-1과 비슷한 방법을 사용하기 때문에 공격이 발견될 가능성이 있다고 지적한다. 미국 표준 기술 연구소(NIST)는 SHA-3로 불리는 새로운 암호화 해시 알고리즘에 대한 후보를 공모하였다.
 
 ## Source References
-- [Generate Secret Key And Test](https://github.com/wstrange/GoogleAuth)  
+- [Generate Secret Key And Test](https://github.com/wstrange/GoogleAuth)
+
 ```java
     @Test
     public void createAndAuthenticate()
@@ -53,6 +55,7 @@ SHA-0과 SHA-1에 대한 공격은 이미 발견되었다. SHA-2에 대한 공�
         assertTrue(ga.authorize(key.getKey(), ga.getTotpPassword(key.getKey())));
     }
 ```
+
 - [Generate TOTP And Test](https://github.com/aerogear/aerogear-otp-java) 
 
 ```java
