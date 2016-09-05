@@ -1,3 +1,7 @@
+---
+layout: post
+title: Google Authenticator
+---
 # Google Authenticator
 
 ## [Google_Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator)
