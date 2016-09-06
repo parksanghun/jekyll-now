@@ -28,6 +28,23 @@ TOTP is an example of a hash-based message authentication code (HMAC). It combin
 ## [HOTP(HMAC-based One-time Password Algorithm)](https://en.wikipedia.org/wiki/HMAC-based_One-time_Password_Algorithm)
 HOTP is an HMAC-based one-time password (OTP) algorithm. It is a cornerstone of Initiative For Open Authentication (OATH).
 
+>### Definition
+
+Let:
+
+- K be a secret key
+- C be a counter
+- HMAC(K,C) = SHA1(K ⊕ 0x5c5c… ∥ SHA1(K ⊕ 0x3636… ∥ C)) with ⊕ as XOR, ∥ as concatenation, for more details see HMAC (C is the message)
+- Truncate be a function that selects 4 bytes from the result of the HMAC in a defined manner
+
+Then HOTP(K,C) is mathematically defined by
+
+HOTP(K,C) = Truncate(HMAC(K,C)) & 0x7FFFFFFF
+The mask 0x7FFFFFFF sets the result's most significant bit to zero. This avoids problems if the result is interpreted as a signed number as some processors do.[1]
+
+For HOTP to be useful for an individual to input to a system, the result must be converted into a HOTP value, a 6–8 digits number that is implementation dependent.
+
+HOTP-Value = HOTP(K,C) mod 10d, where d is the desired number of digits
 
 ## [SHA-1(Secure Hash Algorithm 1)](https://en.wikipedia.org/wiki/SHA-1)
 In cryptography, SHA-1 (Secure Hash Algorithm 1) is a cryptographic hash function designed by the United States National Security Agency and is a U.S. Federal Information Processing Standard published by the United States NIST.[2] SHA-1 produces a 160-bit (20-byte) hash value known as a message digest. A SHA-1 hash value is typically rendered as a hexadecimal number, 40 digits long.
