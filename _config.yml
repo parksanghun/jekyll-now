@@ -9,10 +9,10 @@ paginate_path: "page:num"
 name: SangHun
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Web Developer from Korea.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://parksanghun.github.io/images/keep-looking-up-snoopy.jpg
+avatar: http://www.gravatar.com/avatar/2d4f437cb43bc75c5c3cd0f9f0a8c5cd
 
 #
 # Flags below are optional
@@ -40,7 +40,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-83713048-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -91,3 +91,7 @@ exclude:
 
 categories_path: categories.html
 tags_path: tags.html
+
+# Enter your Facebook app-code
+facebook_user_id: parksanghun.github.io
+facebook_app_id: 1148496888544357
