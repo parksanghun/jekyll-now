@@ -80,9 +80,10 @@ SHA-0과 SHA-1에 대한 공격은 이미 발견되었다. SHA-2에 대한 공�
 
 ```java
     @Test
-    public void testOtpAfter30seconds() throws Exception {
+    public void testOtpAfter31seconds() throws Exception {
+        when(clock.getCurrentInterval()).thenReturn(addElapsedTime(0) - 1);
         String otp = totp.now();
-        when(clock.getCurrentInterval()).thenReturn(addElapsedTime(30));
-        assertTrue("OTP should be valid", totp.verify(otp));
+        when(clock.getCurrentInterval()).thenReturn(addElapsedTime(31));
+        assertFalse("OTP should be invalid", totp.verify(otp));
     }
 ```
