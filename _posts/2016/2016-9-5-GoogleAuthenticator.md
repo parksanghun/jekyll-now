@@ -24,6 +24,7 @@ A portion of the HMAC is extracted and converted to a 6 digit code.
 
 1) 서비스 제공자는 80비트의 비밀키를 각 사용자별로 생성합니다.(반면 RFC 4226 명세는 128비트와 160비트를 권장합니다)
 이것은 16, 26 또는 32자리의 base32로 인코딩된 문자열 또는 QR code로 제공됩니다.
+
 2) 클라이언트는 HMAC-SHA1 알고리즘을 이용하여 비밀키를 생성합니다.
 이 비밀키는 
 
