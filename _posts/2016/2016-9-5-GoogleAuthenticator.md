@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Google Authenticator
+title: How To Implement TOTP (Using Google Authenticator in the Java Language)
 categories: [google]
 tags: [google authenticator, totp, hotp, sha-1, sha]
 published: true
 ---
 
-## [Google_Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator)
+## [Google Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator)
 Google Authenticator is an application that implements two-step verification services using the Time-based One-time Password Algorithm (TOTP) and HMAC-based One-time Password Algorithm (HOTP), for authenticating users of mobile applications by Google. The service implements algorithms specified in RFC 6238 and RFC 4226
+
+구글 인증기 어플리케이션은 모바일 어플리케이션을 이용한 사용자 인증을 위해 TOTP와 HOTP 2단계 검증 서비스로 구현되어 있으며 이는 RFC 6238과 RFC 4226 두개의 알고리즘 명세를 기반으로 합니다. 
 
 >### Technical description
 
@@ -17,6 +19,20 @@ The service provider generates an 80-bit secret key for each user (whereas RFC 4
 - the counter that is incremented with each new code (HOTP).
 
 A portion of the HMAC is extracted and converted to a 6 digit code.
+
+> 기술적 설명
+
+1) 서비스 제공자는 80비트의 비밀키를 각 사용자별로 생성합니다.(반면 RFC 4226 명세는 128비트와 160비트를 권장합니다)
+이것은 16, 26 또는 32자리의 base32로 인코딩된 문자열 또는 QR code로 제공됩니다.
+2) 클라이언트는 HMAC-SHA1 알고리즘을 이용하여 비밀키를 생성합니다.
+이 비밀키는 
+
+- 30초 제한을 가진 숫자(TOTP) 또는
+- 카운터에 의해 증가된 새로운 코드(HOTP)
+
+가 될 수 있습니다 
+
+HMAC의 일부는 6자리의 숫자 코드로 추출 그리고 변환됩니다.
 
 ## [TOTP(Time-based One-time Password Algorithm)](https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm)
 Time-based One-time Password Algorithm (TOTP) is an algorithm that computes a one-time password from a shared secret key and the current time. It has been adopted as Internet Engineering Task Force standard RFC 6238,[1] is the cornerstone of Initiative For Open Authentication (OATH), and is used in a number of two-factor authentication systems.
@@ -29,8 +45,6 @@ TOTP is an example of a hash-based message authentication code (HMAC). It combin
 HOTP is an HMAC-based one-time password (OTP) algorithm. It is a cornerstone of Initiative For Open Authentication (OATH).
 
 >### Definition
-
-Let:
 
 - K be a secret key
 - C be a counter
