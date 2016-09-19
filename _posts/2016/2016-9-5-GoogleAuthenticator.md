@@ -112,7 +112,9 @@ SHA-0과 SHA-1에 대한 공격은 이미 발견되었다. SHA-2에 대한 공�
         assertTrue(ga.authorize(key.getKey(), ga.getTotpPassword(key.getKey())));
     }
 ```
+
 - [Generate TOTP And Test](https://github.com/aerogear/aerogear-otp-java) 
+
 ```java
     @Test
     public void testOtpAfter31seconds() throws Exception {
