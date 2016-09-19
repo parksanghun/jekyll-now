@@ -79,9 +79,6 @@ HMAC는 송신자와 수신자가 비밀 키를 공유할 경우 보안되지 �
 
 메시지를 변경하거나 올바른 해시 값을 다시 만들기 위해서는 비밀 키를 알아야 하므로 데이터나 해시 값을 변경하면 불일치 상태가 발생합니다.그러므로 원래 해시 값과 계산된 해시 값이 일치할 경우 메시지가 인증됩니다.
 
-SHA-1(Secure Hash Algorithm, SHS 및 Secure Hash Standard로도 불림)은 미국 정부에서 공개한 암호화 해시 알고리즘입니다.이 알고리즘은 임의의 길이의 문자열에서 160비트 해시 값을 생성합니다.
-
-
 ## [SHA-1(Secure Hash Algorithm 1)](https://en.wikipedia.org/wiki/SHA-1)
 In cryptography, SHA-1 (Secure Hash Algorithm 1) is a cryptographic hash function designed by the United States National Security Agency and is a U.S. Federal Information Processing Standard published by the United States NIST.[2] SHA-1 produces a 160-bit (20-byte) hash value known as a message digest. A SHA-1 hash value is typically rendered as a hexadecimal number, 40 digits long.
 
