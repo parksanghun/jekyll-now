@@ -41,6 +41,10 @@ Time-based One-time Password Algorithm (TOTP) is an algorithm that computes a on
 
 TOTP is an example of a hash-based message authentication code (HMAC). It combines a secret key with the current timestamp using a cryptographic hash function to generate a one-time password. The timestamp typically increases in 30-second intervals, so passwords generated close together in time from the same secret key will be equal.
 
+시간 기반 일회성 비밀번호 알고리즘은 공유된 비밀키와 현재 시간을 바탕으로 일회성 비밀번호를 산출합니다. 이는 표준 인증 방식인 OAUTH를 계획하기 위한 초기 기반 작업과 2단계 인증의 다양한 용도로 사용되고 있는 국제인터넷표준화기구(IETF)의 표준 RFC 6238로 채용되어진 것입니다. 
+
+TOTP는 해시 기반 메시지 인증 코드(HMAC)의 한 예입니다. 이것은 하나의 비밀 키와 현재 [timestamp](http://terms.naver.com/entry.nhn?docId=1597328&cid=50376&categoryId=50376)를 결합하여 해시 기반 암호화 방식으로 생성된 일회성 비밀번호입니다. 
+timestamp는 일반적으로 30초 주기로 증가하며, 비밀키가 동일하다면 기존에 생성되어진 비밀번호들은 생성과 동시에 사용할 수 없게 됩니다.
 
 
 ## [HOTP(HMAC-based One-time Password Algorithm)](https://en.wikipedia.org/wiki/HMAC-based_One-time_Password_Algorithm)
@@ -57,10 +61,26 @@ Then HOTP(K,C) is mathematically defined by
 
 HOTP(K,C) = Truncate(HMAC(K,C)) & 0x7FFFFFFF
 The mask 0x7FFFFFFF sets the result's most significant bit to zero. This avoids problems if the result is interpreted as a signed number as some processors do.[1]
-
 For HOTP to be useful for an individual to input to a system, the result must be converted into a HOTP value, a 6–8 digits number that is implementation dependent.
-
 HOTP-Value = HOTP(K,C) mod 10d, where d is the desired number of digits
+
+## [Hash-based message authentication code](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code)
+In cryptography, a keyed-hash message authentication code (HMAC) is a specific type of message authentication code (MAC) involving a cryptographic hash function (hence the 'H') in combination with a secret cryptographic key. As with any MAC, it may be used to simultaneously verify both the data integrity and the authentication of a message. Any cryptographic hash function, such as MD5 or SHA-1, may be used in the calculation of an HMAC; the resulting MAC algorithm is termed HMAC-MD5 or HMAC-SHA1 accordingly. The cryptographic strength of the HMAC depends upon the cryptographic strength of the underlying hash function, the size of its hash output, and on the size and quality of the key.
+
+An iterative hash function breaks up a message into blocks of a fixed size and iterates over them with a compression function. For example, MD5 and SHA-1 operate on 512-bit blocks. The size of the output of HMAC is the same as that of the underlying hash function (128 or 160 bits in the case of MD5 or SHA-1, respectively), although it can be truncated if desired.
+
+The definition and analysis of the HMAC construction was first published in 1996 by Mihir Bellare, Ran Canetti, and Hugo Krawczyk,[1] who also wrote RFC 2104. This paper also defined a variant called NMAC that is rarely, if ever, used. FIPS PUB 198 generalizes and standardizes the use of HMACs. HMAC-SHA1 and HMAC-MD5 are used within the IPsec and TLS protocols.
+
+> [HMAC-SHA1](https://msdn.microsoft.com/ko-kr/library/system.security.cryptography.hmacsha1(v=vs.110).aspx)이란?
+
+HMAC-SHA1은 SHA1 해시 함수를 사용하여 구현되고 HMAC(해시 기반 메시지 인증 코드)로 사용되는 키 지정 해시 알고리즘입니다.HMAC 프로세스는 비밀 키를 메시지 데이터와 혼합하여 그 결과를 해시 함수로 해시한 다음 해시 값을 다시 비밀 키와 혼합한 후 해시 함수를 한 번 더 적용합니다.출력 해시의 길이는 160비트입니다.
+
+HMAC는 송신자와 수신자가 비밀 키를 공유할 경우 보안되지 않은 채널을 통해 보낸 메시지가 훼손되었는지 여부를 확인하는 데 사용할 수 있습니다.송신자는 원래 데이터의 해시 값을 계산하여 원래 데이터와 해시 값을 모두 단일 메시지로 보냅니다.수신자는 받은 메시지에 대해 해시 값을 다시 계산하고 계산된 HMAC가 전송된 HMAC와 일치하는지 확인합니다.
+
+메시지를 변경하거나 올바른 해시 값을 다시 만들기 위해서는 비밀 키를 알아야 하므로 데이터나 해시 값을 변경하면 불일치 상태가 발생합니다.그러므로 원래 해시 값과 계산된 해시 값이 일치할 경우 메시지가 인증됩니다.
+
+SHA-1(Secure Hash Algorithm, SHS 및 Secure Hash Standard로도 불림)은 미국 정부에서 공개한 암호화 해시 알고리즘입니다.이 알고리즘은 임의의 길이의 문자열에서 160비트 해시 값을 생성합니다.
+
 
 ## [SHA-1(Secure Hash Algorithm 1)](https://en.wikipedia.org/wiki/SHA-1)
 In cryptography, SHA-1 (Secure Hash Algorithm 1) is a cryptographic hash function designed by the United States National Security Agency and is a U.S. Federal Information Processing Standard published by the United States NIST.[2] SHA-1 produces a 160-bit (20-byte) hash value known as a message digest. A SHA-1 hash value is typically rendered as a hexadecimal number, 40 digits long.
@@ -76,6 +96,7 @@ SHA-1은 SHA 함수들 중 가장 많이 쓰이며, TLS, SSL, PGP, SSH, IPSec �
 SHA-0과 SHA-1에 대한 공격은 이미 발견되었다. SHA-2에 대한 공격은 아직 발견되지 않았으나, 전문가들은 SHA-2 함수들이 SHA-1과 비슷한 방법을 사용하기 때문에 공격이 발견될 가능성이 있다고 지적한다. 미국 표준 기술 연구소(NIST)는 SHA-3로 불리는 새로운 암호화 해시 알고리즘에 대한 후보를 공모하였다.
 
 ## Source References
+- [google-authenticator-github](https://github.com/google/google-authenticator.git)
 - [Generate Secret Key And Test](https://github.com/wstrange/GoogleAuth)
 
 ```java
@@ -91,9 +112,7 @@ SHA-0과 SHA-1에 대한 공격은 이미 발견되었다. SHA-2에 대한 공�
         assertTrue(ga.authorize(key.getKey(), ga.getTotpPassword(key.getKey())));
     }
 ```
-
 - [Generate TOTP And Test](https://github.com/aerogear/aerogear-otp-java) 
-
 ```java
     @Test
     public void testOtpAfter31seconds() throws Exception {
