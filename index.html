@@ -3,49 +3,44 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+    {% for post in site.posts %}
     <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <!--<div class="entry">-->
-        <!--{{ post.excerpt }}-->
-      <!--</div>-->
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
-  {% endfor %}
-
-  <ul class="pager">
-
-    {% if paginator.previous_page %}
-    <li class="previous">
-      {% if paginator.previous_page == 1 %}
-      <a href="{{ site.baseurl }}/">&larr; Newer</a>
-      {% else %}
-      <a href="{{ site.baseurl }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
-      {% endif %}
-    </li>
-    {% else %}
-    <li class="previous disabled">
-      <a>&larr; Newer</a>
-    </li>
-    {% endif %}
-
-    <li>
-      <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    </li>
-
-    {% if paginator.next_page %}
-    <li class="next">
-      <a href="{{ site.baseurl }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
-    </li>
-    {% else %}
-    <li class="next disabled">
-      <a>Older &rarr;</a>
-    </li>
-    {% endif %}
-
-  </ul>
+    {% endfor %}
 </div>
 
+<!-- paging -->
+<div class="main-page-navigator">
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+            {% if paginator.previous_page == 1 %}
+            <a href="{{ site.baseurl }}/">&larr; Newer</a>
+            {% else %}
+            <a href="{{ site.baseurl }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr;
+                Newer</a>
+            {% endif %}
+        </li>
+        {% else %}
+        <li class="previous disabled">
+            <a>&larr; Newer</a>
+        </li>
+        {% endif %}
+
+        <li>
+            <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        </li>
+
+        {% if paginator.next_page %}
+        <li class="next">
+            <a href="{{ site.baseurl }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
+        </li>
+        {% else %}
+        <li class="next disabled">
+            <a>Older &rarr;</a>
+        </li>
+        {% endif %}
+    </ul>
+</div>
