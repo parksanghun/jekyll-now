@@ -376,11 +376,9 @@ ul.dropdown-menu>li>a>i.fa {
 }
 
 .main-page-navigator {
-  //margin: -150px 0 0 -150px;
-  //position: absolute;
-  //left: 50%;
-  //top: 100%;
   clear: both;
+  margin: 0 auto;
+  width: 330px;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
