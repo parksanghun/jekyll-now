@@ -14,6 +14,7 @@ is the cornerstone of Initiative For Open Authentication (OATH)
 > combine
 
 It combines a secret key with the current timestamp using a cryptographic hash function to generate a one-time password.
+
 1. (하나의 단일체를 만들도록) 결합하다
 2. (두 가지 이상의 자질・특징 등을) 갖추다
 
