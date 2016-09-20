@@ -81,7 +81,7 @@ An iterative hash function breaks up a message into blocks of a fixed size and i
 
 The definition and analysis of the HMAC construction was first published in 1996 by Mihir Bellare, Ran Canetti, and Hugo Krawczyk,[1] who also wrote RFC 2104. This paper also defined a variant called NMAC that is rarely, if ever, used. FIPS PUB 198 generalizes and standardizes the use of HMACs. HMAC-SHA1 and HMAC-MD5 are used within the IPsec and TLS protocols.
 
-> [HMAC-SHA1](https://msdn.microsoft.com/ko-kr/library/system.security.cryptography.hmacsha1(v=vs.110).aspx)이란?  
+> [HMAC-SHA1](https://msdn.microsoft.com/ko-kr/library/system.security.cryptography.hmacsha1(v=vs.110).aspx)  
 *참고로 이 내용은 위 영어 문단을 해석한 내용이 아님.*
 
 HMAC-SHA1은 SHA1 해시 함수를 사용하여 구현되고 HMAC(해시 기반 메시지 인증 코드)로 사용되는 키 지정 해시 알고리즘입니다. HMAC 프로세스는 비밀 키를 메시지 데이터와 혼합하여 그 결과를 해시 함수로 해시한 다음 해시 값을 다시 비밀 키와 혼합한 후 해시 함수를 한 번 더 적용합니다. 출력 해시의 길이는 160비트입니다.
