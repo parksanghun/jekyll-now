@@ -6,8 +6,7 @@ tags: [alphabet, i]
 published: true
 ---
 
-**Initiative**
-
+**Initiative**  
 is the cornerstone of Initiative For Open Authentication (OATH)
 
 1. (특정한 문제 해결・목적 달성을 위한 새로운) 계획
