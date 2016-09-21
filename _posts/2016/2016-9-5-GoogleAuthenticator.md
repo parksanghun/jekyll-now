@@ -14,7 +14,7 @@ Source -> via links
 ## [Google Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator)
 Google Authenticator is an application that implements two-step verification services using the Time-based One-time Password Algorithm (TOTP) and HMAC-based One-time Password Algorithm (HOTP), for authenticating users of mobile applications by Google. The service implements algorithms specified in RFC 6238 and RFC 4226
 
-구글 인증기 어플리케이션은 모바일 어플리케이션을 이용한 사용자 인증을 위해 TOTP와 HOTP 2단계 검증 서비스로 구현되어 있으며 이는 RFC 6238과 RFC 4226 두개의 알고리즘 명세를 기반으로 합니다. 
+구글 인증기 어플리케이션은 모바일 어플리케이션을 이용한 사용자 인증을 위해 TOTP와 HOTP 2단계 검증 서비스로 구현되어 있으며 이는 [RFC 6238](https://tools.ietf.org/html/rfc6238)과 [RFC 4226](https://tools.ietf.org/html/rfc4226) 두개의 알고리즘 명세를 기반으로 합니다. 
 
 >### Technical description
 
@@ -26,7 +26,7 @@ The service provider generates an 80-bit secret key for each user (whereas RFC 4
 A portion of the HMAC is extracted and converted to a 6 digit code.
 
 > 기술적 설명  
-개인적으로 번역한 내용 틀려도 책임 안져요~ 대신 틀린 부분 지적은 환영합니다.
+개인적으로 번역한 내용으로 오역이 있을 수 있습니다.
 
 1) 서비스 제공자는 80비트의 비밀키를 각 사용자별로 생성합니다.(반면 RFC 4226 명세는 128비트를 요구하며 160비트를 권장합니다)
 이것은 16, 26 또는 32자리의 base32로 인코딩된 문자열 또는 QR code로 제공됩니다.
@@ -47,7 +47,7 @@ Time-based One-time Password Algorithm (TOTP) is an algorithm that computes a on
 
 TOTP is an example of a hash-based message authentication code (HMAC). It combines a secret key with the current timestamp using a cryptographic hash function to generate a one-time password. The timestamp typically increases in 30-second intervals, so passwords generated close together in time from the same secret key will be equal.
 
-> 개인적으로 번역한 내용 틀려도 책임 안져요~ 대신 틀린 부분 지적은 환영합니다.
+> 개인적으로 번역한 내용으로 오역이 있을 수 있습니다.
 
 시간 기반 일회성 비밀번호 알고리즘은 공유된 비밀키와 현재 시간을 바탕으로 일회성 비밀번호를 산출합니다. 이는 표준 인증 방식인 OAUTH를 계획하기 위한 초기 기반 작업과 2단계 인증의 다양한 용도로 사용되고 있는 국제인터넷표준화기구(IETF)의 표준 RFC 6238로 부터 채용되어진 것입니다. 
 
@@ -111,8 +111,8 @@ A cryptographic hash function is a mathematical algorithm that maps data of arbi
 해시 함수(혹은 Hash로 표기)는 임의의 길이의 입력 메세지를 고정된 길이의 출력값으로 압축시키는 함수이다. 데이타의 무결성 검증, 메세지 인증에 사용한다. 해시 함수는 일방향성과 충돌 회피성이라는 2가지 성질을 만족해야 한다. 먼저, 일방향성은 주어진 해시 값 h에 대해서 H(x)=h를 만족하는 값을 찾는 것이 계산적으로 불가능한 것을 말한다. 다음, 강한 충돌 회피성이란 주어진 x에 대해 H(x)=H(y)를 만족하는 임의의 입력 메세지 y(x)x)를 찾는 것이 계산적으로 불가능함을 뜻한다.
 
 ## Source References
-- [google-authenticator-github](https://github.com/google/google-authenticator.git)
-- [Generate Secret Key And Test](https://github.com/wstrange/GoogleAuth)
+- [google-authenticator-github](https://github.com/google/google-authenticator.git) - c  
+- [Generate Secret Key And Test](https://github.com/wstrange/GoogleAuth) - java
 
 ```java
     @Test
@@ -128,7 +128,7 @@ A cryptographic hash function is a mathematical algorithm that maps data of arbi
     }
 ```
 
-- [Generate TOTP And Test](https://github.com/aerogear/aerogear-otp-java) 
+- [Generate TOTP And Test](https://github.com/aerogear/aerogear-otp-java)  - java
 
 ```java
     @Test
