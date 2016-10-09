@@ -23,3 +23,7 @@ It combines a secret key with the current timestamp using a cryptographic hash f
 In cryptography,  
 암호화 방식
 
+**contrarian**  
+Letters to a Young Contrarian  
+회의주의자  
+
