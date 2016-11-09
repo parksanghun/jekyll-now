@@ -9,3 +9,5 @@ published: true
 - convert code to upper or lower case
 ⌘ Command + Shift + U
 
+- open call hierarchy
+⌘ Command + ALT + F7
