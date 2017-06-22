@@ -6,19 +6,11 @@ tags: [intellij, shortcut]
 published: true
 ---
 
-- convert code to upper or lower case
+- convert code to upper or lower case -> ⌘ Command + Shift + U
 
-⌘ Command + Shift + U
+- open call hierarchy -> ⌘ Command + ALT + F7
 
-- open call hierarchy
+- reformatting source code -> ⌘ Command + ALT + L
 
-⌘ Command + ALT + F7
-
-- reformatting source code
-
-⌘ Command + ALT + L
-
-- optimize imports
-
-Ctrl + Alt + O
+- optimize imports -> Ctrl + Alt + O
 
