@@ -11,3 +11,10 @@ published: true
 
 - open call hierarchy
 ⌘ Command + ALT + F7
+
+- reformatting source code
+⌘ Command + ALT + L
+
+- optimize imports
+Ctrl + Alt + O 
+
