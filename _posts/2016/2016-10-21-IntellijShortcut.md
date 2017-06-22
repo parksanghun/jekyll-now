@@ -7,14 +7,18 @@ published: true
 ---
 
 - convert code to upper or lower case
+
 ⌘ Command + Shift + U
 
 - open call hierarchy
+
 ⌘ Command + ALT + F7
 
 - reformatting source code
+
 ⌘ Command + ALT + L
 
 - optimize imports
-Ctrl + Alt + O 
+
+Ctrl + Alt + O
 
