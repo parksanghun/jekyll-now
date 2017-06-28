@@ -29,6 +29,7 @@ published: true
 
 ### 스프링 컨테이너
 1. 빈 팩토리(org.springframework.beans.factory.BeanFactory)
-DI에 대한 기본적인 지원을 제공하는 가장 단순한 컨테이너
+- DI에 대한 기본적인 지원을 제공하는 가장 단순한 컨테이너
 2. 애플리케이션 컨텍스트(org.springframework.context.ApplicationContext)
-빈 팩토리를 확장해 프로퍼티(property) 파일에 텍스트 메시지를 읽고 해당 이벤트 리스너(listener)에 대한 애플리케이션 이벤트 발행 같은 애플리케이션 프레임워크 서비스를 제공하는 컨테이너
+- 빈 팩토리를 확장해 프로퍼티(property) 파일에 텍스트 메시지를 읽고 해당 이벤트 리스너(listener)에 대한 애플리케이션 이벤트 발행 같은 애플리케이션 프레임워크 서비스를 제공하는 컨테이너
+
