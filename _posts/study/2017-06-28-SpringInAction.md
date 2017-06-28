@@ -33,3 +33,11 @@ published: true
 2. 애플리케이션 컨텍스트(org.springframework.context.ApplicationContext)
 - 빈 팩토리를 확장해 프로퍼티(property) 파일에 텍스트 메시지를 읽고 해당 이벤트 리스너(listener)에 대한 애플리케이션 이벤트 발행 같은 애플리케이션 프레임워크 서비스를 제공하는 컨테이너
 
+```
+스프링으로 작업할 때 빈 팩토리나 애플리케이션 컨텍스트 중에 아무거나 사용해도 상관없지만 빈 팩토리는 대부분의 애플리케이션에 대하여 지나치게 저수준의 기능을 제공한다
+따라서 빈 팩토리보다는 애플리케이션 컨텍스트를 더 선호한다.
+```
+
+``` xml
+ApplicationContext context = new FileSystemApplicationContext("c:/knight.xml");
+```
