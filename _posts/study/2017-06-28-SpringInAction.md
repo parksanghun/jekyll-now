@@ -23,3 +23,12 @@ published: true
 
 * 애플리케이션 컴포넌트 간의 관계를 정하는 것을 **와이어링(wiring)**이라고 한다.
 
+### 애스펙트 적용
+* DI가 소프트웨어 컴포넌트의 결합도를 낮춰 준다면, 애스펙트 지향 프로그래밍은 애플리케이션 전체에 걸쳐 사용되는 기능을 재사용할 수 있는 컴포넌트에 담는다.
+* 애스펙트 지향 프로그래밍은 소프트웨어 시스템 내부의 관심사들을 서로 분리(separation of concerns)하는 기술이라고 설명한다.
+
+### 스프링 컨테이너
+1. 빈 팩토리(org.springframework.beans.factory.BeanFactory)
+- DI에 대한 기본적인 지원을 제공하는 가장 단순한 컨테이너
+2. 애플리케이션 컨텍스트(org.springframework.context.ApplicationContext)
+- 빈 팩토리를 확장해 프로퍼티(property) 파일에 텍스트 메시지를 읽고 해당 이벤트 리스너(listener)에 대한 애플리케이션 이벤트 발행 같은 애플리케이션 프레임워크 서비스를 제공하는 컨테이너
