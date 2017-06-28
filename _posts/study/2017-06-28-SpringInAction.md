@@ -38,7 +38,7 @@ published: true
 따라서 빈 팩토리보다는 애플리케이션 컨텍스트를 더 선호한다.
 ```
 
-```xml
+```java
 ApplicationContext context = new FileSystemApplicationContext("c:/knight.xml");
 ```
 
