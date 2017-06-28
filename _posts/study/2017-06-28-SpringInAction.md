@@ -20,4 +20,4 @@ published: true
 ### 종속객체 주입(DI, Dependency Injection)
 종속객체 주입은 객체가 스스로 종속객체를 획득하는 것과는 반대로 객체에 종속객체가 부여되는 것을 의미한다.
 ![DI](../../images/spring-in-action/di.png)
-
+애플리케이션 컴포넌트 간의 관계를 정하는 것을 **와이어링(wiring)**이라고 한다.
