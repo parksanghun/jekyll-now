@@ -98,6 +98,10 @@ Inline-style:
 Reference-style: 
 ![alt text][logo]
 
+<p align="center">
+    <img src="../../images/spring-in-action/di.png"/>
+</p>
+
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "L
 
 
