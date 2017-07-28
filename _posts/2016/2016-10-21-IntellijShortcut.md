@@ -14,3 +14,4 @@ published: true
 
 - optimize imports -> Ctrl + Alt + O
 
+- upper case -> Ctrl-Shift-U
