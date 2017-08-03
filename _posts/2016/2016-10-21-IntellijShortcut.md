@@ -13,3 +13,5 @@ published: true
 - reformatting source code -> ⌘ Command + ALT + L
 
 - optimize imports -> Ctrl + Alt + O
+
+- camel case -> Shift + ALT + U
