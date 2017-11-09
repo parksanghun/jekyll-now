@@ -8,9 +8,9 @@ permalink:        pretty
 title:            Blog
 tagline:          'SangHun'
 description:      ''
-url:              http://parksanghun.github.io
+url:              https://parksanghun.github.io
 baseurl:          /
-homeurl:          http://parksanghun.github.io
+homeurl:          https://parksanghun.github.io
 
 author:
   name:           'Mark Otto'
