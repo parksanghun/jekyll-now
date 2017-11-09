@@ -5,8 +5,8 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            SangHun
-tagline:          'Blog'
+title:            Blog
+tagline:          'SangHun'
 description:      ''
 url:
 baseurl:          /
