@@ -9,7 +9,8 @@ title:            Blog
 tagline:          'SangHun'
 description:      ''
 url:              http://parksanghun.github.io
-baseurl:          http://parksanghun.github.io
+baseurl:          /
+homeurl:          http://parksanghun.github.io
 
 author:
   name:           'Mark Otto'
