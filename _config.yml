@@ -1,25 +1,71 @@
-# Dependencies
-highlighter:      rouge
+# Site settings
+title: SangHun
+email: sanghun1984@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  서토리의 고분고투 개발 스토리를 담은 블로그입니다.
 
-# Permalinks
-permalink:        pretty
+# url info
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: https://parksanghun.github.io # the base hostname & protocol for your site
+enforce_ssl: parksanghun.github.io
 
-# Setup
-title:            Blog
-tagline:          'SangHun'
-description:      ''
-url:              https://parksanghun.github.io
-baseurl:          /
-homeurl:          https://parksanghun.github.io
+# sns info
+twitter_username: parksanghun
+github_username:  parksanghun
+facebook_username: ""
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+# url change (/:year/:month/:day)
+permalink: /post/:year/:month/:title
 
-paginate:         20
+# timezone
+timezone: Asia/Seoul
 
-# Custom vars
-version:          2.1.0
+# highlighter settings
+# Build settings
+highlighter: rouge
+markdown: kramdown
 
-github:
-  repo:           https://github.com/parksanghun
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: false
+  auto_id_stripping: false
+  /*enable_coderay: true*/
+  syntax_highlighter: rouge
+  parse_block_html: false
+  /*html_to_native: ture*/
+  enable_coderay: true
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+# post separator
+excerpt_separator: <!--more-->
+
+# CSSls
+sass:
+  sass_dir: _sass
+
+# collections
+collections:
+  solutions:
+    output: false
+    permalink: /solution/:categories/:title/
+
+# paging
+paginate: 15
+paginate_path: "/list/:num/"
+
+# gems
+gems:
+  - jekyll-paginate
+
+# plugins
+# safe: true
+
+# exclude
+exclude: [Rakefile, README, Gemfile]

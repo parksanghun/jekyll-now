@@ -4,6 +4,7 @@ title: Philosophy - Ancient
 categories: [philosophy]
 tags: [philosophy, ancient, study]
 published: true
+comments: true
 ---
 
 # 서양철학의 전통 - [http://www.kmooc.kr](http://www.kmooc.kr)

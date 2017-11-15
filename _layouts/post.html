@@ -1,25 +1,111 @@
 ---
 layout: default
 ---
+<section class="page-header">
+  <div class="wrapper">
+    <header class="post-header">
+      <div class="post-info">
+        <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span>
+        <h1 class="post-title">{{ page.title }}</h1>
+      </div>
+    </header>
+  </div>
+</section>
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+<section class="page-content">
+  <div class="wrapper">
+    <div class="post">
+      <!-- post -->
+      <article class="post-content">
+        {{ content }}
+      </article>
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+      <!-- tags -->
+      {% if page.tags.size > 0 %}
+      <div class="post-tags">
+          <span>
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            tags
+          </span>
+          {% for tag in page.tags %}
+          <span><a href="/tags/?#{{ tag }}">{{ tag | downcase }}</a></span>
+          {% endfor %}
+      </div>
+      {% endif %}
+
+
+      {% if site.categories[page.categories.last].size > 1 %}
+      
+      <!-- category other posts -->
+      <hr class="dot" />
+      <div class="post-other">
+        <h2>Other posts</h2>
+      	<ul>
+    			{% for post in site.categories[page.categories.last] %} 
+    				{% if post.title != page.title %}
+    			  <li><a href="{{post.url}}">{{ post.title }}</a></li>
+    			  {% endif %}
+    			{% endfor %}
+      	</ul>
+      </div>
+
+      <!-- 전후글 -->
+      {% for post in site.categories[page.categories.last] %}
+        {% if post.url == page.url %}
+          {% assign post_index0 = forloop.index0 %}
+          {% assign post_index1 = forloop.index %}
+        {% endif %}
+      {% endfor %}
+      {% for post in site.categories[page.categories.last] %}
+        {% if post_index0 == forloop.index %}
+          {% assign next_post = post.url %}
+        {% endif %}
+        {% if post_index1 == forloop.index0 %}
+          {% assign prev_post = post.url %}
+        {% endif %}
+      {% endfor %}
+      <div class="post-close">
+      {% if next_post %}
+        <div class="post-next">
+          <a href="{{ next_post }}">NEXT ></a> <br>
+        </div>
+      {% endif %}
+      {% if prev_post %}
+        <div class="post-prev">
+          <a href="{{ prev_post }}">< PREV</a> <br>
+        </div>
+      {% endif %}
+      </div>
+
+      {% endif %}
+
+    </div>
+  </div>
+</section>
+
+{% if page.comments %}
+<!-- disqus -->
+<section class="page-comments">
+  <div class="wrapper">
+    <div id="disqus_thread"></div>
+    <script>
+    /**
+    * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+    */
+    var disqus_shortname = 'sanghun-blog';
+    var disqus_config = function () {
+      this.page.identifier = "{{ page.url }}";
+      this.page.title = "{{ page.title }}";
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+{% endif %}

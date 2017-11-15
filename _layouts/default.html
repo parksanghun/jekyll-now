@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 
   {% include head.html %}
 
   <body>
-
-    {% include sidebar.html %}
-
-    <div class="content container">
-      {{ content }}
+    <!-- error fix -->
+    <div class="site-icon">
+      <div style="z-index: 10;position: relative;"></div>
+      <div id="btn-move">
+        <div id="btn-up">
+          <i class="fa fa-chevron-circle-up fa-2x"></i>
+        </div>
+        <div id="btn-down">
+          <i class="fa fa-chevron-circle-down fa-2x"></i>
+        </div>
+      </div>
     </div>
 
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% include footerScript.html %}
+    
+    <script id="dsq-count-scr" src="//sanghun84.disqus.com/count.js" async></script>
   </body>
+
 </html>
+<!-- Proudly Hosted on GitHub | Generated {{ site.time }} | Revision {{ site.github.build_revision }} -->

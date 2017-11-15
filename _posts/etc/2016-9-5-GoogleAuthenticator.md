@@ -4,6 +4,7 @@ title: How To Implement TOTP (Using Google Authenticator in the Java Language)
 categories: [google]
 tags: [google authenticator, totp, hotp, sha-1, sha]
 published: true
+comments: true
 ---
 
 ```
