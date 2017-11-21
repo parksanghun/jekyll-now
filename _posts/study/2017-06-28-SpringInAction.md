@@ -4,6 +4,7 @@ title: Spring In Action
 categories: [study]
 tags: [spring, java, book]
 published: true
+comments: true
 ---
 
 

@@ -4,6 +4,7 @@ title: Clean Code
 categories: [study]
 tags: [clean code]
 published: true
+comments: true
 ---
 
 ### 장인 정신을 익히는 과정 두 단계
