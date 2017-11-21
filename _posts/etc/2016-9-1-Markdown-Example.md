@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown Example
-categories: [markdown]
+categories: [etc]
 tags: [markdown, cheatsheet]
 published: true
 ---
