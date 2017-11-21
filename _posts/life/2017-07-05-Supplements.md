@@ -1,8 +1,9 @@
 ---
-layout:post
+layout: post
 title: Supplements
 categories: [life]
 tags: [supplements]
+published: true
 comments: true
 ---
 
