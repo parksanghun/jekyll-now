@@ -5,7 +5,7 @@ description:
 
 # url info
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: parksanghun.github.io # the base hostname & protocol for your site
+url: https://parksanghun.github.io # the base hostname & protocol for your site
 enforce_ssl: parksanghun.github.io
 
 # sns info
