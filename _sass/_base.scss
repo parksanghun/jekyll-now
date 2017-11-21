@@ -1,0 +1,568 @@
+@charset "UTF-8";
+
+/**
+ * box style
+ */
+ *, :after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+/**
+ * Basic styling
+ */
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight;
+  color: $text-color;
+  -webkit-text-size-adjust: none;
+}
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+p, blockquote,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: 16px;
+}
+
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.8;
+  margin-bottom: $spacing-unit / 5;
+  font-weight: $base-font-weight;
+}
+h1 {font-size: $base-font-size * 2}
+h2 {font-size: $base-font-size * 1.8}
+h3 {font-size: $base-font-size * 1.6}
+h4 {font-size: $base-font-size * 1.4}
+h5 {font-size: $base-font-size * 1.2}
+h6 {font-size: $base-font-size * 1.1}
+
+
+
+/**
+ * Links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $brand-color;
+  }
+
+  &:hover {
+    color: $text-color;
+  }
+}
+
+
+
+/**
+ * Blockquotes
+ */
+ /*
+blockquote {
+  color: $grey-color;
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-unit / 2;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+
+}
+*/
+blockquote {
+  display: block;
+  background: #efefef;
+  padding: 15px 20px 15px 50px;
+  margin: 0 0 20px;
+  position: relative;
+  /*Font*/
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  color: #666;
+  text-align: justify;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+blockquote::before {
+  content: "\201C";
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  /*Positioning*/
+  position: absolute;
+  left: 12px;
+  top: -7px;
+}
+
+blockquote::after {
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a {
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover {
+  color: #666;
+}
+
+blockquote em {
+  font-style: italic;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0px;
+}
+
+
+
+/**
+ * hr
+ */
+hr.line {
+  border: none;
+  height: 1px;
+  color: #ddd;
+  background-color: #ddd;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+hr.dot {
+  display: block;
+  margin-top: 46px;
+  /*margin-bottom: 42px;*/
+  text-align: center;
+  border: 0;
+}
+
+hr.dot:before {
+  position: relative;
+  top: -25px;
+  display: inline-block;
+  margin-left: .8em;
+  font-family: Lora,Georgia,"Times New Roman",Times,serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(0,0,0,.6);
+  letter-spacing: .8em;
+  content: '\002e\002e\002e';
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-family: "Consolas", "Menlo", "Monaco", "Courier", monospace;
+  font-size: 15px;
+  line-height: $code-line-height;
+  border-radius: 3px;
+  tab-size: 4;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+code.highlighter-rouge {
+  color: #C31D1D;
+  background-color: #F9F3F3;
+}
+
+pre {
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* so that the line numbers are not selectable */
+@mixin unselectable() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/*
+ having a lineno-container made it easier to style line number 
+ code blocks without impacting normal code blocks
+
+.lineno-container > figure > pre {
+  padding: 0px;
+}
+*/
+
+.highlight {
+  pre.lineno {
+    border: none;
+    @include opacity(0.6);  
+  }
+
+  .lineno {
+    @include unselectable();
+  }
+
+  .gutter {
+    border-right: 1px solid #ccc;
+    background: #E4E4E4;
+  }
+
+  pre {
+    pre {
+      border: none;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  position: relative;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  /*
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  */
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.clearfix {
+  @extend %clearfix;
+}
+
+
+
+/**
+ * Icons
+ */
+ /*
+.icon {
+
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+
+    path {
+        fill: $grey-color;
+    }
+  }
+}
+*/
+
+
+
+/**
+ * Hamburger type css
+ */
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 10px;
+  right: 10px;
+  height: 5px;
+  background-color: #dadada;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #dadada;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+.c-hamburger--htx {
+  background-color: #fafafa;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: black;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+  background-color: #FFF;
+}
+
+/**
+ * font awesome edit
+ */
+.fa-2x, .fa-3x, .fa-4x {
+  vertical-align: middle;
+}
+
+
+
+/**
+ * Grid
+ */
+.row {
+  margin: 0 ($spacing-unit/4*-1);
+}
+.row:after {
+  @extend %clearfix;
+}
+
+div[class^='col'] {
+  float: left;
+  padding: 0 $spacing-unit/4;
+}
+.col-free {
+
+}
+.col {
+  width: 100%;
+}
+.col-1-3 {
+  width: 33.333333333333%;
+}
+.col-2-3 {
+  width: 66.666666666666%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-2-4 {
+  width: 50%;
+}
+.col-3-4 {
+  width: 75%;
+}
+.col-1-5 {
+  width: 20%;
+}
+.col-2-5 {
+  width: 40%;
+}
+.col-3-5 {
+  width: 60%;
+}
+.col-4-5 {
+  width: 80%;
+}
+.col-1-10 {
+  width: 10%;
+}
+.col-2-10 {
+  width: 20%;
+}
+.col-3-10 {
+  width: 30%;
+}
+.col-4-10 {
+  width: 40%;
+}
+.col-5-10 {
+  width: 50%;
+}
+.col-6-10 {
+  width: 60%;
+}
+.col-7-10 {
+  width: 70%;
+}
+.col-8-10 {
+  width: 80%;
+}
+.col-9-10 {
+  width: 90%;
+}
+@include media-query($on-laptop) {
+  div[class^='col'] {
+    float: none;
+    width: 100%;
+  }
+}

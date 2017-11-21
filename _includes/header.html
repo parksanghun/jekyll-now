@@ -1,0 +1,30 @@
+<header class="site-header">
+
+  <div class="wrapper clearfix">
+    <div class="site-title">
+      <a href="/">{{ site.title }}</a>
+    </div>
+    <div class="site-menu">
+      <ul>
+      {% for page in site.pages %}
+        {% if page.title %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+        <li>
+          <button class="c-hamburger c-hamburger--htx">
+            <span>toggle menu</span>
+          </button>       
+        </li>
+      </ul>
+    </div>
+    <div class="site-cate">
+      <ul>
+        {% for category in site.categories %}
+        <li><a href="/categories/{{ category | first }}/">{{ category | first }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+</header>
