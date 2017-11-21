@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intellij Shortcut
-categories: [ide]
+categories: [tools]
 tags: [intellij, shortcut]
 published: true
 ---
