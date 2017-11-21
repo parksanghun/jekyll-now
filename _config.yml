@@ -1,8 +1,7 @@
 # Site settings
 title: SangHun
 email: sanghun1984@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  서토리의 고분고투 개발 스토리를 담은 블로그입니다.
+description:
 
 # url info
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -30,10 +29,8 @@ kramdown:
   hard_wrap: false
   auto_ids: false
   auto_id_stripping: false
-  /*enable_coderay: true*/
   syntax_highlighter: rouge
   parse_block_html: false
-  /*html_to_native: ture*/
   enable_coderay: true
 
   coderay:
