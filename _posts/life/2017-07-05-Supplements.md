@@ -1,7 +1,8 @@
 ---
 layout:post
+title: Supplements
 categories: [life]
-tags:supplements
+tags: [supplements]
 comments: true
 ---
 
