@@ -29,8 +29,10 @@ kramdown:
   hard_wrap: false
   auto_ids: false
   auto_id_stripping: false
+  /*enable_coderay: true*/
   syntax_highlighter: rouge
   parse_block_html: false
+  /*html_to_native: true*/
   enable_coderay: true
 
   coderay:
