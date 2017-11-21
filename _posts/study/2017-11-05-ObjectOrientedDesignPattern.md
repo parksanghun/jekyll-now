@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ObjectOrientedDesignPattern
-categories: [programming]
+categories: [study]
 tags: [object oriented design pattern]
 published: true
 ---

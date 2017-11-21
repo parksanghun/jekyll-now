@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring In Action
-categories: [programming]
+categories: [study]
 tags: [spring, java, book]
 published: true
 ---

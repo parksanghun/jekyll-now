@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Philosophy - Ancient
-categories: [philosophy]
+categories: [study]
 tags: [philosophy, ancient, study]
 published: true
 comments: true

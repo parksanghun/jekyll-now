@@ -1,5 +1,6 @@
 ---
 layout:post
+categories: [life]
 tags:supplements
 comments: true
 ---

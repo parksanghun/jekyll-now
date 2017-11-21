@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clean Code
-categories: [programming]
+categories: [study]
 tags: [clean code]
 published: true
 ---

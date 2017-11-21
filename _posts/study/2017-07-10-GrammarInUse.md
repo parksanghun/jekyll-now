@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grammar in use 박상효 선생님 강의
-categories: [language]
+title: Grammar in use
+categories: [study]
 tags: [english, study]
 published: true
 ---
