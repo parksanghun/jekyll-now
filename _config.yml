@@ -14,7 +14,7 @@ github_username:  parksanghun
 facebook_username: ""
 
 # url change (/:year/:month/:day)
-permalink: /:category/:year/:month/:title
+permalink: /:categories/:year/:month/:title
 
 # timezone
 timezone: Asia/Seoul
