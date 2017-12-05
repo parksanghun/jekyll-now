@@ -284,32 +284,33 @@ pre {
  having a lineno-container made it easier to style line number 
  code blocks without impacting normal code blocks
 
-}
-*/
 .lineno-container > figure > pre {
   padding: 0px;
+}
+}
+*/
 
 .highlight {
-  pre.lineno {
-    border: none;
-    @include opacity(0.6);  
-  }
+  //pre.lineno {
+  //  border: none;
+  //  @include opacity(0.6);
+  //}
+  //
+  //.lineno {
+  //  @include unselectable();
+  //}
+  //
+  //.gutter {
+  //  border-right: 1px solid #ccc;
+  //  background: #E4E4E4;
+  //}
 
-  .lineno {
-    @include unselectable();
-  }
-
-  .gutter {
-    border-right: 1px solid #ccc;
-    background: #E4E4E4;
-  }
-
-  pre {
-    pre {
-      border: none;
-      margin-bottom: 0px;
-    }
-  }
+  //pre {
+  //  pre {
+  //    border: none;
+  //    margin-bottom: 0px;
+  //  }
+  //}
 }
 
 
