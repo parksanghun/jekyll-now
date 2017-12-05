@@ -27,4 +27,28 @@
     </div>
   </div>
 
+
+  <div class="ui small menu">
+    <a href="/" class="active item">
+      {{ site.title }}
+    </a>
+    {% for page in site.pages %}
+    {% if page.title %}
+    <a href="{{ page.url | prepend: site.baseurl }}" class="item">{{ page.title }}</a>
+    {% endif %}
+    {% endfor %}
+
+    <div class="right menu">
+      <div class="ui dropdown item">
+        Category <i class="dropdown icon"></i>
+        <div class="menu">
+          {% for category in site.categories %}
+          <a href="/categories/{{ category | first }}/" class="item">{{ category | first }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </header>
