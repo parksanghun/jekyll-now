@@ -21,7 +21,7 @@ timezone: Asia/Seoul
 
 # highlighter settings
 # Build settings
-highlighter: rouge
+#highlighter: rouge
 markdown: kramdown
 
 kramdown:
@@ -29,11 +29,9 @@ kramdown:
   hard_wrap: false
   auto_ids: false
   auto_id_stripping: false
-  /*enable_coderay: true*/
   syntax_highlighter: rouge
   parse_block_html: false
-  /*html_to_native: true*/
-  enable_coderay: true
+  enable_coderay: false
 
   coderay:
     coderay_wrap: div
