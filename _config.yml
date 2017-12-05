@@ -22,23 +22,23 @@ timezone: Asia/Seoul
 # highlighter settings
 # Build settings
 #highlighter: rouge
-markdown: kramdown
+#markdown: kramdown
 
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: false
-  auto_id_stripping: false
+#kramdown:
+#  input: GFM
+#  hard_wrap: false
+#  auto_ids: false
+#  auto_id_stripping: false
 #  syntax_highlighter: rouge
-  parse_block_html: false
-  enable_coderay: false
-
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: nil
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+#  parse_block_html: false
+#  enable_coderay: false
+#
+#  coderay:
+#    coderay_wrap: div
+#    coderay_line_numbers: nil
+#    coderay_tab_width: 4
+#    coderay_bold_every: 10
+#    coderay_css: class
 
 # post separator
 excerpt_separator: <!--more-->
