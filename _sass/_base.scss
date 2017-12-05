@@ -284,10 +284,10 @@ pre {
  having a lineno-container made it easier to style line number 
  code blocks without impacting normal code blocks
 
-.lineno-container > figure > pre {
-  padding: 0px;
 }
 */
+.lineno-container > figure > pre {
+  padding: 0px;
 
 .highlight {
   pre.lineno {
