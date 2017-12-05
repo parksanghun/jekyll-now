@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
   <!-- jQuery -->
-  <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+  <!--<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>-->
 
   <!-- http-> https -->
   <script type="text/javascript">
@@ -44,4 +44,11 @@
     ga('create', 'UA-66666483-2', 'auto');
     ga('send', 'pageview');
   </script>
+  <!--{{ "/semantic/dist/semantic.min.css" | prepend: site.baseurl }}-->
+  <link rel="stylesheet" type="text/css" href="{{ "/semantic/dist/semantic.min.css" | prepend: site.baseurl }}">
+  <script
+          src="//code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
 </head>
