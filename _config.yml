@@ -33,7 +33,7 @@ kramdown:
   syntax_highlighter: rouge
   parse_block_html: false
   /*html_to_native: true*/
-  enable_coderay: false
+  enable_coderay: true
 
   coderay:
     coderay_wrap: div
