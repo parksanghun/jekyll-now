@@ -29,7 +29,7 @@ kramdown:
   hard_wrap: false
   auto_ids: false
   auto_id_stripping: false
-  syntax_highlighter: rouge
+#  syntax_highlighter: rouge
   parse_block_html: false
   enable_coderay: false
 
