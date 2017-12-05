@@ -51,7 +51,7 @@ sass:
 collections:
   solutions:
     output: false
-    permalink: /solution/:categories/:title/
+    permalink: /solution/:categories/:title
 
 # paging
 paginate: 15
