@@ -52,7 +52,11 @@
 
   <script>
     $(document).ready(function(){
-        $('#site-search').on('click keyup', function() {
+        $('#searchText').on('keyup', function() {
+            searchBlog();
+        });
+
+        $('#searchIcon').on('click', function() {
             searchBlog();
         });
 
