@@ -50,4 +50,10 @@
   </script>
   <script src="{{ "/semantic/dist/semantic.min.js" | prepend: site.baseurl }}"></script>
 
+    $(document).ready(function(){
+        $('#site-search').on('click', function(e) {
+            var text = $($(this).siblings()[0]).val();
+            window.open('https://www.google.co.kr/search?q=site:parksanghun.github.io+' + encodeURIComponent(text), '_blank');
+        });
+    })
 </head>
