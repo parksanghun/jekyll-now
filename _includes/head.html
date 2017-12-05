@@ -52,8 +52,10 @@
 
   <script>
     $(document).ready(function(){
-        $('#searchText').on('keyup', function() {
-            searchBlog();
+        $('#searchText').on('keypress', function(e) {
+            if (e.keyCode == 13) {
+              searchBlog();
+            }
         });
 
         $('#searchIcon').on('click', function() {
