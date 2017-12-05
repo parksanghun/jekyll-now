@@ -14,6 +14,6 @@ published: true
 
 - optimize imports -> Ctrl + Alt + O
 
-- camel case -> Shift + ALT + U (need install plugin)
+- camel case -> Shift + ALT + U (need to install plugin)
 
 - recent files -> Ctrl + E
