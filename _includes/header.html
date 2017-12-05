@@ -1,3 +1,4 @@
+<header>
   <div class="ui small menu">
 
     <a href="/" class="active item">
@@ -10,14 +11,15 @@
     {% endfor %}
 
     <div class="right menu">
-      <div class="ui dropdown item">
+      <div class="ui simple dropdown item">
         Category <i class="dropdown icon"></i>
         <div class="menu">
           {% for category in site.categories %}
-          <a href="/categories/{{ category | first }}/" class="item">{{ category | first }}</a>
+          <a href="/categories/{{ category | first }}/" class="teal item">{{ category | first }}</a>
           {% endfor %}
         </div>
       </div>
     </div>
 
   </div>
+</header>
