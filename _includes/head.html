@@ -52,10 +52,14 @@
 
   <script>
     $(document).ready(function(){
-        $('#site-search').on('click', function() {
-            var text = $($(this).siblings()[0]).val();
-            window.open('https://www.google.co.kr/search?q=site:parksanghun.github.io+' + encodeURIComponent(text), '_blank');
+        $('#site-search').on('click keyup', function() {
+            searchBlog();
         });
+
+        searchBlog = function () {
+            var text = $('#site-search').val();
+            window.open('https://www.google.co.kr/search?q=site:parksanghun.github.io+' + encodeURIComponent(text), '_blank');
+        }
     })
   </script>
 </head>
