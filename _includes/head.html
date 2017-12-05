@@ -61,7 +61,7 @@
         });
 
         searchBlog = function () {
-            var text = $('#site-search').val();
+            var text = $('#searchText').text();
             window.open('https://www.google.co.kr/search?q=site:parksanghun.github.io+' + encodeURIComponent(text), '_blank');
         }
     })
