@@ -17,3 +17,5 @@ published: true
 - camel case -> Shift + ALT + U (need to install plugin)
 
 - recent files -> Ctrl + E
+
+- column selection mode -> Shift + Alt + Insert
