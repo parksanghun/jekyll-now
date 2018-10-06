@@ -1,4 +1,11 @@
-o
+---
+layout: post
+title: ObjectOrientedDesignPattern
+categories: [study]
+tags: [design pattern]
+published: true
+comments: true
+---
 ### 캡슐화(encapsulation)
 ```
 객체 지향의 장점은 한 곳의 구현 변경이 다른 곳에 변경을 가하지 않도록 해준다는데 있다.
