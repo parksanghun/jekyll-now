@@ -58,7 +58,7 @@ curl -XPUT 'localhost:9200/twitter?pretty' -H 'Content-Type: application/json' -
 
 - GET /_cat/health?v
 - GET /_cat/indices?v
-- PUT /customer?pretty : PUT 동사를 사용하여 "customer"라는 이름의 색인을 만듭니다PUT 동사를 사용하여 "customer"라는 이름의 색인을 만듭니다. 단, 호출의 끝에 `pretty`를 추가하여 JSON 응답이 있다면 pretty-print를 수행하게 합니다.
+- PUT /customer?pretty : PUT 동사를 사용하여 "customer"라는 이름의 색인을 만듭니다 PUT 동사를 사용하여 "customer"라는 이름의 색인을 만듭니다. 단, 호출의 끝에 `pretty`를 추가하여 JSON 응답이 있다면 pretty-print를 수행하게 합니다.
 
 
 
