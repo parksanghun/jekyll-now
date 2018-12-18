@@ -147,7 +147,6 @@ blockquote {
   margin: 0 0 20px;
   position: relative;
   /*Font*/
-  font-family: Georgia, serif;
   line-height: 1.6;
   color: #666;
   text-align: justify;
@@ -163,7 +162,6 @@ blockquote {
 blockquote::before {
   content: "\201C";
   /*Font*/
-  font-family: Georgia, serif;
   font-size: 60px;
   font-weight: bold;
   color: #999;
