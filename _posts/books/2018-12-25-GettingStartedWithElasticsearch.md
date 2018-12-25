@@ -2,7 +2,7 @@
 layout: post
 title: GettingStartedWithElasticsearch
 categories: [books]
-tags: [book pragamtic]
+tags: [book elasticsearch]
 published: true
 comments: true
 ---
