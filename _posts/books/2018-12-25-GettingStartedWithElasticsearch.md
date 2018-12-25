@@ -50,20 +50,20 @@ DELETE books/book/1
 - 업데이트는 _update API의 두 개의 매개 변수인 doc와 script를 이용해서 데이터를 제어할 수 있다.
 - doc 매개 변수는 도규먼트에 새로운 필드를 추가하거나 기존 필드 값을 변경하는 데 사용한다.
 - script 매개 변수는 좀 더 복잡한 프로그래밍 기법을 사용해서 입력된 내용에 따라 필드의 값을 변경하는 등의 처리에 사용한다.
-```
-# doc 
+
+``` 
 POST books/book/1/_update
 {
   "doc" : {
     "category" : "ICT"
   }
 }
-# script 
+ 
 POST books/book/1/_update
 {
   "script": "ctx._source.pages += 50"
 }
-# script 
+
 POST books/book/1/_update
 {
   "script": "ctx._source.author.add(\"Lee\")"
