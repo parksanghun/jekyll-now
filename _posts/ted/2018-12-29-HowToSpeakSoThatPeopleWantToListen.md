@@ -19,6 +19,7 @@ comments: true
 
 ### HAIL
 - 우리의 연설이 강력하고 세상을 바꿀만한 것이 되도록 하시기 원하신다면 토대로 삼아야 할 강력한 네 가지 기초 원리가 있습니다.
+
 > - Honesty - be clear and straight
 > - Authenticity - be yourself 
 > - integrity - being your word  
