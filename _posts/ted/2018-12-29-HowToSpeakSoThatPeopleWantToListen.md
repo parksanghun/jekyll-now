@@ -22,7 +22,7 @@ comments: true
 
 > - 정직(Honesty) - 말에 있어 진실하고 솔직 명확한(be clear and straight) 
 > - 진정성(Authenticity) - 자연스러운 것(be yourself)
-> - 도덕성(Authenticity) - 말을 지키는 것(being your word), 말과 행동이 일치 누군가 신뢰할 수 있는 사람이 되는 것
+> - 도덕성(Integrity) - 말을 지키는 것(being your word), 말과 행동이 일치 누군가 신뢰할 수 있는 사람이 되는 것
 > - 사랑(Love) - 낭만적인 사랑이 아닌 사람들이 잘 되길 바라는 마음(wish them well)
 
 ### 놀만한 말의 힘을 증가시켜 줄 몇 가지 도구
