@@ -22,9 +22,7 @@ public class Car {
     public String owner = "철수";
 }
 
-
 public class PremiumCar extends Car {
-
     public String owner = "영희";
 }
 
