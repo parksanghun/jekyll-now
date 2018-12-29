@@ -15,12 +15,10 @@ public(전체공개) > protected(상속 or 패키지내부) > default(패키지 
 멤버변수는 override 되지 않는다, 단지 hiding 될 뿐.
 - Hiding Fields
   
-  > Within a class, a field that has the same name as a field in the superclass hides the superclass's field, even if their types are different. Within the subclass, the field in the superclass cannot be referenced by its simple name. Instead, the field must be accessed through super, which is covered in the next section. Generally speaking, we don't recommend hiding fields as it makes code difficult to read.
+> Within a class, a field that has the same name as a field in the superclass hides the superclass's field, even if their types are different. Within the subclass, the field in the superclass cannot be referenced by its simple name. Instead, the field must be accessed through super, which is covered in the next section. Generally speaking, we don't recommend hiding fields as it makes code difficult to read.
 
 ```java
 public class Car {
-    
-
     public String owner = "철수";
 }
 
@@ -42,6 +40,7 @@ public static void main(String[] args) {
 단, 오버라이딩된 메소드는 파생 클래스의 것이 호출된다.
 
 Exception 실행시 우선순위
+
 ```java
 public class ExceptionTest {
     public static void main(String[] args) {
