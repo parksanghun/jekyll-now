@@ -21,7 +21,7 @@ comments: true
 > 한번 이야기해서 받아들이지 않는다면 재차 말하는 것은 상대방이 느끼기에 거부감의 표현이라고 생각한다.
 
 ### 하루에 한가지 이상 좋은 생각하기
-- TED에서 The happy secret to better work란 영상을 봤다.
+- TED에서 [The happy secret to better work](https://www.ted.com/talks/shawn_achor_the_happy_secret_to_better_work?referrer=playlist-the_most_popular_talks_of_all)란 영상을 봤다.
 긍정적인 사고를 하면 행복한 삶을 살 수 있다는 내용인데 하루에 한가지 이상 긍정적인 생각을 오늘부터 적어봐야겠다.
 > - 오늘도 몇장은 아니지만 책상에 앉아 난 책을 읽었다!!!
 > - TED 강연 하나 또 봤다!!!
