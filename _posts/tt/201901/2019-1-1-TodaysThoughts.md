@@ -29,3 +29,8 @@ comments: true
 > - 나의 건강을 위해 집안 청소를 했다!!!
 > - 쉘 스크립트를 작성해 다음에 편한 대응을 할 수 있도록 했다!!!
 > - 새해의 목표를 세우는 시간을 가져보았다!!!
+
+### 매일 실천하는 습관
+> - 책읽기 - JAVA static, final, interface
+> - TED 보기 - [how_do_you_define_yourself](https://www.ted.com/talks/lizzie_velasquez_how_do_you_define_yourself)
+> - 오늘의 생각쓰기 - add 20190101
