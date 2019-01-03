@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java Static
+title: Java Final
 categories: [java]
 tags: [java final]
 published: true
