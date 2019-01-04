@@ -18,6 +18,7 @@ comments: true
 - 추상클래스보다 더 단순화된 형태
 - 상수와 메소드 이름으로만 구성되어있다
 - 인터페이스는 어떤 기능에 대한 추상이며, 실제 구현은 그 인터페이스를 구현하는 클래스에게 맡긴다.
+
 ```java
    public interface DBLogging{
       String MONGO_DB_NAME = "ABC_Mongo_Datastore";
@@ -37,6 +38,7 @@ comments: true
 - Java 8 이전에는 여러 인터페이스가 같은 메서드를 갖더라도 어차피 구현은 클래스에서만 제공했기 때문에 문제가 되지 않았다. 
   하지만 Java 8에서 인터페이스들이 각각 동일한 메서드의 기본 구현을 제공하고, 
   클래스에서 충돌이 발생하는 메서드를 명시적으로 오버라이드 하지 않으면 컴파일러가 어떤 기본 메서드를 사용해야할 지 선택할 수 없기 때문에 문제가 발생한다.  
+
 ```java
    public interface DBLogging{
       String MONGO_DB_NAME = "ABC_Mongo_Datastore";
@@ -74,6 +76,7 @@ comments: true
 
 ### 인터페이스의 변화 (SINCE JAVA 9)
 - JAVA 9 부터는 인터페이스에서 private으로 메소드 선언이 가능하다.
+
 ```java
 public interface DBLogging {
 	String MONGO_DB_NAME = "ABC_Mongo_Datastore";
@@ -103,7 +106,6 @@ public interface DBLogging {
 	}
 	// Any other abstract, static, default methods
 }
-
 ```
 
 [Java 9 Private methods in Interfaces](https://www.journaldev.com/12850/java-9-private-methods-interfaces)
