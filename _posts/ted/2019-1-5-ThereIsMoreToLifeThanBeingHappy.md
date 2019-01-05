@@ -38,4 +38,4 @@ comments: true
     - ***의미있는 삶을 이끄는 사람들은 그들의 삶 속에서 벌어지는 이야기를 회복, 성장, 사랑으로 정리하여 들려준다***
     - 자신의 삶을 찬찬히 들여다보면서 자신이 겪은 일들이 자신을 어떻게 형성하게 되었는지 잃은 것은 무엇인지, 또 얻게된 것은 무엇인지 분명하게 하면서 방식을 찾아간다
 
-
+출처 - [There's more to life than being happy](https://www.ted.com/talks/emily_esfahani_smith_there_s_more_to_life_than_being_happy?referrer=playlist-how_to_notice_and_build_joy_into_your_life)
