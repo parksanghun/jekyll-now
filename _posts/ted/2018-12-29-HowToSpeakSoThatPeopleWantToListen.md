@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HowToSpeakSoThatPeopleWantToListen
+title: How to speak so that people want to listen
 categories: [ted]
 tags: [ted speak listen]
 published: true
@@ -32,3 +32,5 @@ comments: true
 > - 속도 - 매우 빠르게 말해서 흥분하게 되거나 강조하기 위해 바로 속도를 늦출 수도 있고 침묵할 수도 있다. 침묵은 매우 강력할 수 있다.
 > - 음조 - 낮은 소리와 높은 소리를 통해 주의환기를 보여 줄 수 있다.
 > - 음량 - 음량 조절을 통해 매우 격해질 수 있다.
+
+출처 - [How to speak so that people want to listen](https://www.ted.com/talks/julian_treasure_how_to_speak_so_that_people_want_to_listen)
