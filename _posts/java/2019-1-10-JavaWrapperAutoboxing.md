@@ -23,8 +23,7 @@ comments: true
 | void        | Void          |
 
 
-- 참고
+### 참고
+> - [자바 메모리 구조](http://hoonmaro.tistory.com/19)
+> - [java datatype](https://againsee.com/2018/06/15/java-datatype/)
 
-[자바 메모리 구조](http://hoonmaro.tistory.com/19)
-
-[java datatype](https://againsee.com/2018/06/15/java-datatype/)
