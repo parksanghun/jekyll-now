@@ -30,6 +30,25 @@ comments: true
 | 7 | 8 | 9 |
 
 
+| <center>type | <center>바이트 수 | <center>범위 | <center>설명 |
+| :------- | :------- | :------- | :------- |
+| **숫자 형식** | 
+| INT() | 4 | 약 -21억 ~ +21억 | 정수형 |
+| BIGINT() | 8 | 약-900경 ~ +900경 | 정수형 |
+| FLOAT | 4 | 소수점 아래 7자리까지 표현 | 부동소수점 (12.1242) |
+| DOUBLE | 8 | 소수점 아래 15자리까지 표현 | 부동소수점 |
+| **문자 형식** | 
+| CHAR(n) | ? | 최대 255글자 | 고정길이 문자형. n은 글자수. CHAR=CHAR(1). |
+| VARCHAR(n) | ? | 최대 65535글자 | 가변길이 문자형. Variable Character. 용량 절약에 유리 |
+| BINARY(n) | 1~255 | | 고정길이 이진 데이터 값 |
+| VARBINARY(n) | 1~255 | | 가변길이 이진 데이터 값 |
+| TINYTEXT | | | 최대 255글자 | 
+| TEXT | | 최대 65535글자| 글 본문 |
+| **날짜 형식** |
+| DATE | 3 | | YYYY-MM-DD |
+| DATETIME | 8 | | YYYY-MM-DD HH:MM:SS |
+| TIME | 3 | | HH:MM:SS |
+| TIMESTAMP | 4 | | 이후로 지난 시간 | 
 
 
 ### 참고
