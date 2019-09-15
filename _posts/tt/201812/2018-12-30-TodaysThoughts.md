@@ -3,7 +3,7 @@ layout: post
 title: Today's Thoughts
 categories: [tt]
 tags: [today, thought]
-published: true
+published: false
 comments: true
 ---
 
