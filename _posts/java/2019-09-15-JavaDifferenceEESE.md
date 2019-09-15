@@ -35,7 +35,7 @@ Java EE is defined by its specification. The specification defines APIs (applica
 Examples of contexts in which Java EE referencing runtimes are used are: e-commerce, accounting, banking information systems.
 
 ### Jakarta EE Architecture Diagram
-[jakarta ee](https://jakarta.ee/specifications/platform/8/platform-spec-8.html#architecture)
+[image from jakarta ee site](https://jakarta.ee/specifications/platform/8/platform-spec-8.html#architecture)
 ![jakartaEEArchitectureDiagram](/images/jakartaEEArchitectureDiagram.png)
 
 #### Conclusion
