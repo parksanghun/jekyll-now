@@ -36,7 +36,7 @@ Examples of contexts in which Java EE referencing runtimes are used are: e-comme
 
 ### Jakarta EE Architecture Diagram
 [jakarta ee](https://jakarta.ee/specifications/platform/8/platform-spec-8.html#architecture)
-![jakartaEEArchitectureDiagram](../../images/jakartaEEArchitectureDiagram.png)
+![jakartaEEArchitectureDiagram](/images/jakartaEEArchitectureDiagram.png)
 
 #### Conclusion
 > 정의만 놓고 보면 EE의 기능을 JDK설치시 대부분 가능하기 때문에 혼동이 오는데 이분법적으로 EE만 사용하다는 개념보다는 JAVA SE의 기능을 보다 확장시킨 것이 EE이며 그것에 대한 상세 명세들을 제공한다라고 생각하면 될 듯...
